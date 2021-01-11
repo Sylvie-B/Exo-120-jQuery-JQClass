@@ -18,10 +18,10 @@ body {
     display: flex;
 }
 
-.square, .lozenge, .round {
-    width: 10em;
-    height: 10em;
-    margin: 2em;
+.square, #lozenge, .round {
+    width: 8em;
+    height: 8em;
+    margin: 3em;
     border: 1px solid black;
 }
 
@@ -29,3 +29,27 @@ body {
     border-radius: 50%;
 }
 
+#lozenge {
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+#control {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 30%;
+    height: 2em;
+}
+
+.full {
+    background-color: cadetblue;
+}
+
+.empty {
+    background-color: unset;
+}
